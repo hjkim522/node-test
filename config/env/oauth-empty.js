@@ -2,6 +2,6 @@ module.exports = {
 	facebook: {
 		clientID: '',
 		clientSecret: '',
-		callbackURL: ''
+		callbackURL: 'http://localhost:3000/oauth/facebook/callback'
 	}
 };
