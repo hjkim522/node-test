@@ -3,10 +3,10 @@ exports.render = function(req, res) {
 		console.log(req.session.lastVisit);
 	}
 	req.session.lastVisit = new Date();
-
-	//res.send('Hello World');
+	
 	res.render('index', {
 		title: 'Hello World',
+		user: JSON.stringify(req.user),
 		userFullName: req.user ? req.user.fullName : ''
 	});
 };
