@@ -10,4 +10,5 @@ var passport = passport();
 app.listen(3000);
 
 module.exports = app;
+console.log('Hello');
 console.log('Running...');
